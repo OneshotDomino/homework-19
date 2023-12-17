@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/reset.css" />
+    <link rel="stylesheet" href="./styles/style.css" />
+  </head>
+  <body>
+    <section class="intro">
+      <header class="header">
+        <div class="header__wrapper">
+          <div class="header__box header__box_none">
+            <a href="#" class="header__link"
+              ><img
+                src="./icons/airplane.svg"
+                alt="plane"
+                class="header__link-icon"
+              />Find Flight</a
+            >
+
+            <a href="#" class="header__link"
+              ><img
+                src="./icons/bed.svg"
+                alt="plane"
+                class="header__link-icon"
+              />Find Stays</a
+            >
+          </div>
+          <div class="header__box header__box_flex-center">
+            <img src="./img/Logo.svg" alt="logo" class="header__logo" />
+          </div>
+          <div class="header__box header__box_flex-end">
+            <a href="#" class="header__link">Login</a>
+            <button class="button button_white">Sign up</button>
+          </div>
+        </div>
+      </header>
+
+      <div class="container">
+        <div class="intro__content">
+          <p class="intro__text">Helping Others</p>
+          <h1 class="intro__title">Live & Travel</h1>
+          <p class="intro__subtitle">Special offers to suit your plan</p>
+        </div>
+      </div>
+
+      <div class="info-tabs">
+        <div class="container">
+          <div class="info-tabs__wrapper">
+            <div class="info-tabs__buttons">
+              <button class="info-tabs__button">
+                <img
+                  src="./icons/airplane_black.svg"
+                  alt="plane"
+                  class="info-tabs__button-icon"
+                />
+                Flights
+              </button>
+              <button class="info-tabs__button">
+                <img
+                  src="./icons/bed_black.svg"
+                  alt="bed"
+                  class="info-tabs__button-icon"
+                />Stays
+              </button>
+            </div>
+            <div class="info-tabs__content">
+              <fieldset class="info-tabs__content-border">
+                <legend class="info-tabs__content-text">From - To</legend>
+                <div class="info-tabs__content-wrapper">
+                  <input
+                    placeholder="Lahore - Karachi"
+                    type="text"
+                    class="info-tabs__content-input"
+                  />
+                  <img
+                    src="./icons/swap-horizontal.svg"
+                    alt="#"
+                    class="info-tabs__content-img"
+                  />
+                </div>
+              </fieldset>
+
+              <fieldset
+                class="info-tabs__content-border info-tabs__content-border_width-minauto"
+              >
+                <legend class="info-tabs__content-text">Trip</legend>
+                <select name="" id="" class="info-tabs__content-select">
+                  <option value="value1">Return</option>
+                  <option value="value2">Не</option>
+                  <option value="value3">Cмотри</option>
+                </select>
+              </fieldset>
+
+              <fieldset class="info-tabs__content-border">
+                <legend class="info-tabs__content-text">Depart- Return</legend>
+                <input
+                  placeholder="07 Nov 22 - 13 Nov 22"
+                  type="text"
+                  class="info-tabs__content-input"
+                />
+              </fieldset>
+
+              <fieldset class="info-tabs__content-border">
+                <legend class="info-tabs__content-text">
+                  Passenger - Class
+                </legend>
+                <input
+                  placeholder="1 Passenger, Economy"
+                  type="text"
+                  class="info-tabs__content-input"
+                />
+              </fieldset>
+            </div>
+            <div class="info-tabs__buttons-end">
+              <button class="button button_white fw-medium">
+                <img
+                  src="./icons/add-outline.svg"
+                  alt="plus"
+                  class="button-icon"
+                />Add Promo Code
+              </button>
+              <button class="button">
+                <img
+                  src="./icons/Paper Plane.svg"
+                  alt="paper plane"
+                  class="button-icon"
+                />Show Flights
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <main class="main">
+      <section class="trips">
+        <div class="container">
+          <div class="trips__wrapper">
+            <div class="trips__cont">
+              <h2 class="trips__title">Plan your perfect trip</h2>
+              <p class="trips__text">
+                Search Flights & Places Hire to our most popular destinations
+              </p>
+            </div>
+            <button class="button button_white button_border">
+              See more places
+            </button>
+          </div>
+          <div class="trips__cards">
+            <div class="trips__cards-wrapper">
+              <img
+                src="./img/Istanbul.png"
+                alt="country"
+                class="trips__cards-img"
+              />
+              <div class="trips__cards-cont">
+                <p class="trips__cards-country">Istanbul, Turkey</p>
+                <a href="#" class="trips__cards-link">Flights</a>
+                <span class="trips__cards-dot">·</span>
+                <a href="#" class="trips__cards-link">Hotels</a>
+                <span class="trips__cards-dot">·</span>
+                <a href="#" class="trips__cards-link">Resorts</a>
+              </div>
+            </div>
+
+            <div class="trips__cards-wrapper">
+              <img
+                src="./img/Sydney.png"
+                alt="country"
+                class="trips__cards-img"
+              />
+              <div class="trips__cards-cont">
+                <p class="trips__cards-country">Sydney, Australia</p>
+                <a href="#" class="trips__cards-link">Flights</a>
+                <span class="trips__cards-dot">·</span>
+                <a href="#" class="trips__cards-link">Hotels</a>
+                <span class="trips__cards-dot">·</span>
+                <a href="#" class="trips__cards-link">Resorts</a>
+              </div>
+            </div>
+
+            <div class="trips__cards-wrapper">
+              <img
+                src="./img/Baku.png"
+                alt="country"
+                class="trips__cards-img"
+              />
+              <div class="trips__cards-cont">
+                <p class="trips__cards-country">Baku, Azerbaijan</p>
+                <a href="#" class="trips__cards-link">Flights</a>
+                <span class="trips__cards-dot">·</span>
+                <a href="#" class="trips__cards-link">Hotels</a>
+                <span class="trips__cards-dot">·</span>
+                <a href="#" class="trips__cards-link">Resorts</a>
+              </div>
+            </div>
+
+            <div class="trips__cards-wrapper">
+              <img
+                src="./img/Malé.png"
+                alt="country"
+                class="trips__cards-img"
+              />
+              <div class="trips__cards-cont">
+                <p class="trips__cards-country">Malé, Maldives</p>
+                <a href="#" class="trips__cards-link">Flights</a>
+                <span class="trips__cards-dot">·</span>
+                <a href="#" class="trips__cards-link">Hotels</a>
+                <span class="trips__cards-dot">·</span>
+                <a href="#" class="trips__cards-link">Resorts</a>
+              </div>
+            </div>
+
+            <div class="trips__cards-wrapper">
+              <img
+                src="./img/Paris.png"
+                alt="country"
+                class="trips__cards-img"
+              />
+              <div class="trips__cards-cont">
+                <p class="trips__cards-country">Paris, France</p>
+                <a href="#" class="trips__cards-link">Flights</a>
+                <span class="trips__cards-dot">·</span>
+                <a href="#" class="trips__cards-link">Hotels</a>
+                <span class="trips__cards-dot">·</span>
+                <a href="#" class="trips__cards-link">Resorts</a>
+              </div>
+            </div>
+
+            <div class="trips__cards-wrapper">
+              <img
+                src="./img/New York.png"
+                alt="country"
+                class="trips__cards-img"
+              />
+              <div class="trips__cards-cont">
+                <p class="trips__cards-country">New York, US</p>
+                <a href="#" class="trips__cards-link">Flights</a>
+                <span class="trips__cards-dot">·</span>
+                <a href="#" class="trips__cards-link">Hotels</a>
+                <span class="trips__cards-dot">·</span>
+                <a href="#" class="trips__cards-link">Resorts</a>
+              </div>
+            </div>
+
+            <div class="trips__cards-wrapper">
+              <img
+                src="./img/London.png"
+                alt="country"
+                class="trips__cards-img"
+              />
+              <div class="trips__cards-cont">
+                <p class="trips__cards-country">London, UK</p>
+                <a href="#" class="trips__cards-link">Flights</a>
+                <span class="trips__cards-dot">·</span>
+                <a href="#" class="trips__cards-link">Hotels</a>
+                <span class="trips__cards-dot">·</span>
+                <a href="#" class="trips__cards-link">Resorts</a>
+              </div>
+            </div>
+
+            <div class="trips__cards-wrapper">
+              <img
+                src="./img/Tokyo.png"
+                alt="country"
+                class="trips__cards-img"
+              />
+              <div class="trips__cards-cont">
+                <p class="trips__cards-country">Tokyo, Japan</p>
+                <a href="#" class="trips__cards-link">Flights</a>
+                <span class="trips__cards-dot">·</span>
+                <a href="#" class="trips__cards-link">Hotels</a>
+                <span class="trips__cards-dot">·</span>
+                <a href="#" class="trips__cards-link">Resorts</a>
+              </div>
+            </div>
+
+            <div class="trips__cards-wrapper">
+              <img
+                src="./img/Dubai.png"
+                alt="country"
+                class="trips__cards-img"
+              />
+              <div class="trips__cards-cont">
+                <p class="trips__cards-country">Dubai, UAE</p>
+                <a href="#" class="trips__cards-link">Flights</a>
+                <span class="trips__cards-dot">·</span>
+                <a href="#" class="trips__cards-link">Hotels</a>
+                <span class="trips__cards-dot">·</span>
+                <a href="#" class="trips__cards-link">Resorts</a>
+              </div>
+            </div>
+          </div>
+          <div class="trips__flights-hotels">
+            <div class="trips__flights">
+              <div class="trips__flights-wrap">
+                <div class="trips__flights-content">
+                  <h4 class="trips__flights-title">Flights</h4>
+                  <p class="trips__flights-text">
+                    Search Flights & Places Hire to our most popular
+                    destinations
+                  </p>
+                  <button class="button">
+                    <img
+                      src="./icons/Paper Plane.svg"
+                      alt="paper plane"
+                      class="trips__flights-button-img"
+                    />Show Flights
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="trips__hotels">
+              <div class="trips__hotels-wrap">
+                <div class="trips__flights-content">
+                  <h4 class="trips__hotels-title">Hotels</h4>
+                  <p class="trips__hotels-text">
+                    Search Flights & Places Hire to our most popular
+                    destinations
+                  </p>
+                  <button class="button">
+                    <img
+                      src="./icons/Paper Plane.svg"
+                      alt="paper plane"
+                      class="trips__flights-button-img"
+                    />Show Hotels
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="reviews">
+        <div class="container">
+          <div class="reviews__header">
+            <div class="reviews__header-cont">
+              <h4 class="reviews__header-title">Reviews</h4>
+              <p class="reviews__header-text">
+                What people says about Golobe facilities
+              </p>
+            </div>
+            <button class="button button_white button_border">See All</button>
+          </div>
+
+          <div class="reviews__wrapper">
+            <div class="reviews-card">
+              <h4 class="reviews-card__title">
+                “A real sense of community, nurtured”
+              </h4>
+              <div class="reviews-card__cont">
+                <p class="reviews-card__text">
+                  Really appreciate the help and support from the staff during
+                  these tough times. Shoutout to Katie for...
+                </p>
+                <div class="reviews-card__text-end">
+                  <a href="" class="reviews-card__link">View more</a>
+                </div>
+                <div class="reviews-card__stars">
+                  <img
+                    src="./icons/stars.svg"
+                    alt="star"
+                    class="reviews-card__star"
+                  />
+                  <img
+                    src="./icons/stars.svg"
+                    alt="star"
+                    class="reviews-card__star"
+                  />
+                  <img
+                    src="./icons/stars.svg"
+                    alt="star"
+                    class="reviews-card__star"
+                  />
+                  <img
+                    src="./icons/stars.svg"
+                    alt="star"
+                    class="reviews-card__star"
+                  />
+                  <img
+                    src="./icons/stars.svg"
+                    alt="star"
+                    class="reviews-card__star"
+                  />
+                </div>
+                <p class="reviews-card__name">Olga</p>
+                <p class="reviews-card__company">Weave Studios – Kai Tak</p>
+                <div class="google">
+                  <img
+                    src="./icons/flat-color-icons_google.svg"
+                    alt="google"
+                    class="reviews-card__img-google"
+                  />
+                  <span class="reviews-card__text-google">Google</span>
+                </div>
+                <img
+                  src="./img/mountain.jpg"
+                  alt="mountains"
+                  class="reviews-card__img"
+                />
+              </div>
+            </div>
+
+            <div class="reviews-card">
+              <h4 class="reviews-card__title">
+                “The facilities are superb. Clean, slick, bright.”
+              </h4>
+              <div class="reviews-card__cont">
+                <p class="reviews-card__text">
+                  “A real sense of community, nurtured”Really appreciate the
+                  help and support from the staff...
+                </p>
+                <div class="reviews-card__text-end">
+                  <a href="" class="reviews-card__link">View more</a>
+                </div>
+                <div class="reviews-card__stars">
+                  <img
+                    src="./icons/stars.svg"
+                    alt="star"
+                    class="reviews-card__star"
+                  />
+                  <img
+                    src="./icons/stars.svg"
+                    alt="star"
+                    class="reviews-card__star"
+                  />
+                  <img
+                    src="./icons/stars.svg"
+                    alt="star"
+                    class="reviews-card__star"
+                  />
+                  <img
+                    src="./icons/stars.svg"
+                    alt="star"
+                    class="reviews-card__star"
+                  />
+                  <img
+                    src="./icons/stars.svg"
+                    alt="star"
+                    class="reviews-card__star"
+                  />
+                </div>
+                <p class="reviews-card__name">Thomas</p>
+                <p class="reviews-card__company">Weave Studios – Olympic</p>
+                <div class="google">
+                  <img
+                    src="./icons/flat-color-icons_google.svg"
+                    alt="google"
+                    class="reviews-card__img-google"
+                  />
+                  <span class="reviews-card__text-google">Google</span>
+                </div>
+                <img
+                  src="./img/aurora.jpg"
+                  alt="mountains"
+                  class="reviews-card__img"
+                />
+              </div>
+            </div>
+
+            <div class="reviews-card">
+              <h4 class="reviews-card__title">
+                “A real sense of community, nurtured”
+              </h4>
+              <div class="reviews-card__cont">
+                <p class="reviews-card__text">
+                  Really appreciate the help and support from the staff during
+                  these tough times. Shoutout to Katie for...
+                </p>
+                <div class="reviews-card__text-end">
+                  <a href="" class="reviews-card__link">View more</a>
+                </div>
+                <div class="reviews-card__stars">
+                  <img
+                    src="./icons/stars.svg"
+                    alt="star"
+                    class="reviews-card__star"
+                  />
+                  <img
+                    src="./icons/stars.svg"
+                    alt="star"
+                    class="reviews-card__star"
+                  />
+                  <img
+                    src="./icons/stars.svg"
+                    alt="star"
+                    class="reviews-card__star"
+                  />
+                  <img
+                    src="./icons/stars.svg"
+                    alt="star"
+                    class="reviews-card__star"
+                  />
+                  <img
+                    src="./icons/stars.svg"
+                    alt="star"
+                    class="reviews-card__star"
+                  />
+                </div>
+                <p class="reviews-card__name">Eliot</p>
+                <p class="reviews-card__company">Weave Studios – Kai Tak</p>
+                <div class="google">
+                  <img
+                    src="./icons/flat-color-icons_google.svg"
+                    alt="google"
+                    class="reviews-card__img-google"
+                  />
+                  <span class="reviews-card__text-google">Google</span>
+                </div>
+                <img
+                  src="./img/ice.jpg"
+                  alt="mountains"
+                  class="reviews-card__img"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+
+    <footer class="footer">
+      <div class="container">
+        
+        <div class="footer__wrapper">
+          <div class="footer__icons">
+            <img src="./img/logo-black.svg" alt="logo" class="footer__icons-logo">
+            <div class="footer__icons-wrap">
+              <a href="" class="footer_icon-link"><img src="./icons/facebook-fill.svg" alt="facebook" class="footer_icom"></a>
+              <a href="" class="footer_icon-link"><img src="./icons/twitter-fill.svg" alt="twitter" class="footer_icom"></a>
+              <a href="" class="footer_icon-link"><img src="./icons/youtube-fill.svg" alt="youtube" class="footer_icom"></a>
+              <a href="" class="footer_icon-link"><img src="./icons/instagram-filled.svg" alt="instagram" class="footer_icom"></a>
+            </div>
+          </div>
+
+          <div class="footer__links">
+            <h6 class="footer__links-title">Our Destinations</h6>
+            <div class="footer__links-wrap">
+              <a href="#" class="footer__links-link">Canada</a>
+              <a href="#" class="footer__links-link">Alaksa</a>
+              <a href="#" class="footer__links-link">France</a>
+              <a href="#" class="footer__links-link">Iceland</a>
+            </div>
+          </div>
+
+          <div class="footer__links">
+            <h6 class="footer__links-title">Our Activities</h6>
+            <div class="footer__links-wrap">
+              <a href="#" class="footer__links-link">Northern Lights</a>
+              <a href="#" class="footer__links-link">Cruising & sailing</a>
+              <a href="#" class="footer__links-link">Multi-activities</a>
+              <a href="#" class="footer__links-link">Kayaing</a>
+            </div>
+          </div>
+
+          <div class="footer__links">
+            <h6 class="footer__links-title">Travel Blogs</h6>
+            <div class="footer__links-wrap">
+              <a href="#" class="footer__links-link">Bali Travel Guide</a>
+              <a href="#" class="footer__links-link">Sri Lanks Travel Guide</a>
+              <a href="#" class="footer__links-link">Peru Travel Guide</a>
+              <a href="#" class="footer__links-link">Bali Travel Guide</a>
+            </div>
+          </div>
+
+          <div class="footer__links">
+            <h6 class="footer__links-title">About Us</h6>
+            <div class="footer__links-wrap">
+              <a href="#" class="footer__links-link">Our Story</a>
+              <a href="#" class="footer__links-link">Work with us</a>
+            </div>
+          </div>
+
+          <div class="footer__links">
+            <h6 class="footer__links-title">Contact Us</h6>
+            <div class="footer__links-wrap">
+              <a href="#" class="footer__links-link">Our Story</a>
+              <a href="#" class="footer__links-link">Work with us</a>
+            </div>
+          </div>
+
+        </div>
+
+        
+
+      </div>
+      <div class="footer__subscribe">
+        <div class="container">
+          <div class="footer__subscribe-wrap">
+            <div class="footer__subscribe-content">
+              <h5 class="footer__subscribe-title">Subscribe Newsletter</h5>
+              <h6 class="footer__subscribe-travel">The Travel</h6>
+              <p class="footer__subscribe-text">Get inspired! Receive travel discounts, tips and behind the scenes stories.</p>
+              <div class="footer_subscribe-content-input">
+                <input type="email" placeholder="Your email address" class="footer__subscribe-input">
+                <button class="button button_black-green">Subscribe</button>
+              </div>
+            </div>
+            <img src="./img/mailbox.png" alt="mailbox" class="footer__subscribe-img">
+          </div>
+        </div>
+        
+      </div>
+    </footer>
+  </body>
+</html>

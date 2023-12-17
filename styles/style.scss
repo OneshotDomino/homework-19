@@ -1,0 +1,39 @@
+@import './base/fonts';
+@import './base/mixins';
+@import './base/variables';
+
+@import './blocks/button';
+@import './blocks/intro';
+@import './blocks/header';
+@import './blocks/info-tabs';
+@import './blocks/trips';
+@import './blocks/reviews';
+@import './blocks/footer';
+
+html, body {
+    font-family: 'Montserrat';
+    font-size: 14px;
+}
+
+body {
+    background-color: #FAFBFC;
+}
+
+.main {
+    overflow: hidden;
+}
+
+.container {
+    max-width:1232px;
+    margin: 0 auto;
+}
+
+.fw-medium {
+    font-weight: 500;
+}
+
+@media (max-width: 1400px) {
+    .container {
+      padding: 0 15px;
+    }
+  }
