@@ -145,14 +145,24 @@
 
     .footer__wrapper {
         flex-wrap: wrap;
-        justify-content: flex-start;
+        justify-content: start;
         gap: 15px;
+    }
+
+    
+
+    .footer__icons {
+        width: 100%;
     }
 }
 
 @media (max-width: 768px) {
     .footer__subscribe-input {
         width: 250px;
+    }
+
+    .footer__links {
+        width: 48%;
     }
     
 }
@@ -177,5 +187,11 @@
 
     .footer__subscribe-img {
         display: none;
+    }
+}
+
+@media (max-width:479px) {
+    .footer__links {
+        width: 100%;
     }
 }

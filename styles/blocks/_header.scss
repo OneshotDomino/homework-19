@@ -48,6 +48,20 @@
 
     .header__box_none {
         display: none;
-      
     }
+}
+
+@media (max-width:576px) {
+
+
+    .header__wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .header__link {
+        margin-right: 15px;
+    }
+
+  
 }

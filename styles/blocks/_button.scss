@@ -25,6 +25,11 @@
     }
 }
 
-// @media (max-width:)
+@media (max-width: 768px) {
+    .button {
+        &_white { 
+            padding: 12px 16px;
+         }
+    }
 
-
+}
